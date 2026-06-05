@@ -19,6 +19,12 @@ pip install -e ".[dev]"
 ```
 
 
+
+<p align="center">
+  <img src="assets/score_impact.png" alt="how each action affects your score" width="90%">
+</p>
+
+
 ## example
 
 ```
