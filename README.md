@@ -12,6 +12,39 @@ cd ficosim
 pip install -e ".[dev]"
 ```
 
+
+## example
+
+```
+$ ficosim
+
+pick a starter profile:
+  [1] clean slate (no history, age 18)
+  [2] average american (680 score, 5yr history)
+  [3] recovering (520 score, missed payments, collections)
+> 2
+
+current score: 680 (fair)
+
+  payment history  [========      ] 65%
+  amounts owed     [==========    ] 72%
+  credit age       [======        ] 45%
+  new credit       [============  ] 85%
+  credit mix       [=======       ] 55%
+
+pick an action:
+  [1] miss a credit card payment
+  [2] pay off a credit card balance
+  [3] open a new credit card
+  [4] apply for a mortgage
+  [5] max out a credit card
+> 1
+
+score: 680 -> 642 (-38 points)
+payment history dropped from 65% to 48%
+note: a single missed payment stays on your report for 7 years
+```
+
 ## Usage
 
 ```bash
