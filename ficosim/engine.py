@@ -42,6 +42,7 @@ def _payment_history_score(profile: CreditProfile, reference_date: date | None =
 
     Based on the ratio of on-time payments, weighted by recency and
     severity of any delinquencies.
+    """
     if not profile.payment_history:
         # No history means no negatives, but not a perfect track record.
         return 0.7
@@ -191,6 +192,7 @@ def compute_score(
     """Compute a credit score (300-850) from a CreditProfile.
 
     Score = 300 + 550 * (weighted sum of category scores).
+    """
     scores = compute_category_scores(profile, reference_date)
     weighted_sum = sum(scores[cat] * WEIGHTS[cat] for cat in WEIGHTS)
     raw = 300 + 550 * weighted_sum

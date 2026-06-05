@@ -34,6 +34,7 @@ def miss_payment(
 
     Returns:
         Tuple of (new_profile, explanation_string).
+    """
     if account_index < 0 or account_index >= len(profile.accounts):
         raise ValueError(f"Invalid account index: {account_index}")
 
@@ -78,6 +79,7 @@ def open_card(
 
     Returns:
         Tuple of (new_profile, explanation_string).
+    """
     if limit <= 0:
         raise ValueError("Credit limit must be positive")
 
@@ -188,6 +190,7 @@ def close_account(
 
     Returns:
         Tuple of (new_profile, explanation_string).
+    """
     if account_index < 0 or account_index >= len(profile.accounts):
         raise ValueError(f"Invalid account index: {account_index}")
 
@@ -223,6 +226,7 @@ def make_large_purchase(
 
     Returns:
         Tuple of (new_profile, explanation_string).
+    """
     if account_index < 0 or account_index >= len(profile.accounts):
         raise ValueError(f"Invalid account index: {account_index}")
     if amount <= 0:

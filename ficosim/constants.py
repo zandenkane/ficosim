@@ -64,6 +64,7 @@ def young_professional_profile() -> CreditProfile:
     """Young Professional: 2 credit cards, 1 auto loan, ~3 years history.
 
     Approximate score: ~724 (Good).
+    """
     return CreditProfile(
         accounts=[
             Account(
