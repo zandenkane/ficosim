@@ -1,6 +1,12 @@
-# ficosim
+<p align="center">
+  <img src="assets/banner.png" alt="ficosim" width="100%">
+</p>
 
-![CI](https://github.com/zandenkane/ficosim/actions/workflows/ci.yml/badge.svg)
+<p align="center">
+  <a href="https://github.com/zandenkane/ficosim/actions/workflows/ci.yml"><img src="https://github.com/zandenkane/ficosim/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white" alt="python">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License">
+</p>
 
 Interactive credit score simulator for the terminal. Pick a starter profile, apply financial actions (miss a payment, open a card, pay down debt, apply for a mortgage), and see exactly how each decision moves your score across all five FICO categories.
 
